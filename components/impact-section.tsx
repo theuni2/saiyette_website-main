@@ -42,7 +42,7 @@ const ImpactSection = () => {
   const metrics = [
     {
       label: "Women Reached",
-      value: 10000,
+      value: 5000,
       description: "Women Reached Through Awareness Drives",
     },
     {
@@ -52,7 +52,7 @@ const ImpactSection = () => {
     },
     {
       label: "Partners",
-      value: 50,
+      value: 10,
       description: "Corporate & NGO Partners Driving Change",
     },
     {

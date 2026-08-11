@@ -625,10 +625,9 @@ export default function Recognition() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-bold mb-6 tracking-tight"
           >
-            Saiyette’s{" "}
-            <span className="text-primary">Impact & Recognition</span>
+           <span className="text-primary">Impact & Recognition</span>
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -638,53 +637,10 @@ export default function Recognition() {
             Celebrating young voices that spark awareness and courage.
             Saiyette’s powerful article and dedicated advocacy have been
             featured in IntellyJelly Magazine.
-          </motion.p>
+          </motion.p> */}
         </div>
 
         <div className="space-y-16">
-          {/* UK Section */}
-          <section>
-            <div className="flex items-center gap-4 mb-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-primary/50">
-                United Kingdom
-              </span>
-              <div className="h-px flex-1 bg-primary/10" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="cursor-zoom-in"
-                onClick={() => setSelectedImage("/new/5.jpeg")}
-              >
-                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white">
-                  <img
-                    src="/new/5.jpeg"
-                    alt="COBIS Certificate"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="cursor-zoom-in"
-                onClick={() => setSelectedImage("/new/6.png")}
-              >
-                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white bg-slate-50 p-4 flex items-center justify-center">
-                  <img
-                    src="/new/6.png"
-                    alt="COBIS Recognition"
-                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-              </motion.div>
-            </div>
-          </section>
 
           {/* UAE Section */}
           <section>
@@ -845,6 +801,52 @@ export default function Recognition() {
             </div>
           </section>
 
+ {/* UK Section */}
+          <section>
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-xs font-bold uppercase tracking-widest text-primary/50">
+                United Kingdom
+              </span>
+              <div className="h-px flex-1 bg-primary/10" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="cursor-zoom-in"
+                onClick={() => setSelectedImage("/new/5.jpeg")}
+              >
+                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white">
+                  <img
+                    src="/new/5.jpeg"
+                    alt="COBIS Certificate"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="cursor-zoom-in"
+                onClick={() => setSelectedImage("/new/6.png")}
+              >
+                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white bg-slate-50 p-4 flex items-center justify-center">
+                  <img
+                    src="/new/6.png"
+                    alt="COBIS Recognition"
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </section>
+
+
+
           {/* Global Impact Summary */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -857,8 +859,7 @@ export default function Recognition() {
                   Global Voice, Local Impact
                 </h4>
                 <p className="text-muted-foreground leading-relaxed italic">
-                  "Empowering women through awareness and early detection across
-                  the UK, UAE, and India. Together, we are making a difference
+                  "Empowering women through awareness and early detection. Together, we are making a difference
                   across borders."
                 </p>
               </div>

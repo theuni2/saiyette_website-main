@@ -8,6 +8,7 @@ import CTA from "@/components/cta";
 import Recognition from "@/components/recognition";
 import Podcast from "@/components/podcast";
 import AwarenessPosters from "@/components/awareness-posters";
+import HomeAwarenessSection from "@/components/general_awareness";
 
 const Page = () => {
   return (
@@ -19,7 +20,8 @@ const Page = () => {
         <ImpactSection />
         <Recognition/>
         <Gallery />
-        <AwarenessPosters />
+        {/* <AwarenessPosters /> */}
+        <HomeAwarenessSection />
         <Podcast />
         <CTA />
       </main>
