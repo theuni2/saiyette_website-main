@@ -4,4 +4,5 @@ export const NAV_LINKS = [
   { name: "Donor Network", href: "/donor-network" },
   { name: "Partners", href: "/partners" },
   { name: "Cancer Awareness", href: "/awareness" },
+  { name: "Care Check", href: "https://carecheck-one.vercel.app/" },
 ];

@@ -227,7 +227,7 @@ const HeroSection = () => (
               href="/about"
               className="px-8 py-4 bg-primary text-white rounded-full font-bold transition-all flex items-center gap-2 group shadow-lg shadow-primary/20 hover:scale-101"
             >
-              Donate Now
+              Support Our Mission
               <ArrowRight
                 size={20}
                 className="group-hover:translate-x-1 transition-transform"

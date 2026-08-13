@@ -7,28 +7,28 @@ import { Mic2, PlayCircle, Sparkles } from "lucide-react";
 const podcasts = [
   {
     id: "fqqv5PZ7GHs",
-    title: "Empowering Women's Health",
-    description: "Insights into preventive care and wellness for women.",
+    title: "Empowering Young Minds: Cancer Awareness",
+    description: "Join us for an impactful cancer awareness session organized by IntellyJelly",
   },
   {
     id: "rn49BDNGe4Y",
-    title: "Stories of Resilience",
-    description: "Heartfelt conversations with survivors and their journeys.",
+    title: "Cancer Awareness for Youth ft. Dr. Priyanka Raina",
+    description: "This episode is designed to help young audiences understand cancer in a simple, practical, and empowering way.",
   },
   {
     id: "kbLAAGF5zXk",
-    title: "Early Detection Matters",
-    description: "The critical importance of regular screenings and awareness.",
+    title: "Real Talk on Cancer Care | Ft. Dr. Saurabh Jain",
+    description: "Dr. Jain shares practical, easy to understand guidance aimed at helping young audiences stay aware of their health.",
   },
   {
     id: "w3xeQOrjMbM",
-    title: "Community Support",
-    description: "How collective action drives meaningful change in healthcare.",
+    title: "Integrative Approach to Cancer Care with Dr. Lima Mathew",
+    description: "Integrating modern oncology with classical Ayurveda for holistic cancer care.",
   },
   {
     id: "BoSgc9RINO8",
-    title: "Navigating the Journey",
-    description: "Practical advice and emotional support for patients and families.",
+    title: "A Cancer Biologist’s Journey in CAR-T Cell Therapy",
+    description: "Exploring cancer biology and CAR-T cell therapy’s impact on clinical care.",
   },
 ];
 

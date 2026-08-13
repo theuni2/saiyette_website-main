@@ -383,7 +383,7 @@ const AwarenessPage = () => {
                 </div>
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -420,7 +420,68 @@ const AwarenessPage = () => {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </motion.div> */}
+
+
+              <motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="w-full lg:w-1/2"
+>
+  <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+    Screening <span className="text-primary">Guidelines</span>
+  </h2>
+  
+  <div className="space-y-8 mb-8">
+    {[
+      {
+        title: "Monthly Self-Examination",
+        desc: "Perform a breast self-exam every month to become familiar with how your breasts normally look and feel.",
+      },
+      {
+        title: "Clinical Breast Exam",
+        desc: "Have a clinical breast exam by a healthcare professional at least every 3 years starting at age 20, and annually after age 40.",
+      },
+      {
+        title: "Annual Mammogram",
+        desc: "Women age 40 and older should have a mammogram every year to screen for breast cancer.",
+      },
+    ].map((step, i) => (
+      <div key={i} className="flex gap-6">
+        <div className="shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg">
+          {i + 1}
+        </div>
+        <div>
+          <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            {step.desc}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Saiyette "Care Check" Feature Card */}
+  <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20 space-y-3">
+    <div className="flex items-center gap-2 text-primary font-semibold">
+      <span className="relative flex h-3 w-3">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+      </span>
+      <span>Saiyette Care Check Web App</span>
+    </div>
+    <p className="text-sm text-muted-foreground leading-relaxed">
+      Track your health journey seamlessly. Access personalized screening schedules, self-exam reminders, and comprehensive health monitoring tools all in one place.
+    </p>
+    <a
+      href="https://carecheck-one.vercel.app/" 
+      className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline pt-1"
+    >
+      Explore Care Check App &rarr;
+    </a>
+  </div>
+</motion.div>
             </div>
           </div>
         </section>
