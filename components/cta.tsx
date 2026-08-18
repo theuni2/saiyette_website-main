@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Ribbon, Heart, Footprints, Sparkles } from "lucide-react";
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
-import { FloatingIcon } from "./ui/floating-icon";
 
 const CTA = () => {
   return (

@@ -205,13 +205,13 @@ export default function AwarenessPosters() {
       directionX: 20,
     },
     {
-      src: "/posters/3.png",
+      src: "/posters/4.png",
       alt: "Early Symptoms and Prevention Awareness Poster",
       delay: 0.3,
       directionX: -20,
     },
     {
-      src: "/posters/4.png",
+      src: "/posters/5.png",
       alt: "Screening and Diagnosis Guidelines Poster",
       delay: 0.4,
       directionX: 20,

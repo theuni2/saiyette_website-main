@@ -173,7 +173,7 @@ const Intro = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Link
-                href="/our-story"
+                href="/about"
                 className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-8 py-4 text-lg font-medium transition-all hover:scale-[1.02] hover:bg-primary hover:text-white hover:border-primary group"
               >
                 Learn More
