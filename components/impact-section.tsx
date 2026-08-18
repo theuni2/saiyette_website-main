@@ -42,12 +42,12 @@ const ImpactSection = () => {
   const metrics = [
     {
       label: "Women Reached",
-      value: 5000,
+      value: 1000,
       description: "Women Reached Through Awareness Drives",
     },
     {
       label: "Screening Tests",
-      value: 1800,
+      value: 300,
       description: "Free Screening Tests Conducted",
     },
     {
@@ -57,7 +57,7 @@ const ImpactSection = () => {
     },
     {
       label: "Volunteers",
-      value: 100,
+      value: 300,
       description: "Volunteers Contributing To The Cause",
     },
   ];

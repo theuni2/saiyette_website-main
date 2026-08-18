@@ -186,11 +186,17 @@ const About = () => {
                   description:
                     "Scaling our initiatives to reach more regions and formalizing our impact assessment models to better serve the community.",
                 },
+                // {
+                //   year: "2025",
+                //   title: "CMP (Community Mentorship Program)",
+                //   description:
+                //     "Launching a dedicated program to connect newly diagnosed patients with survivors for emotional and practical guidance.",
+                // },
                 {
                   year: "2025",
-                  title: "CMP (Community Mentorship Program)",
+                  title: "Care Check",
                   description:
-                    "Launching a dedicated program to connect newly diagnosed patients with survivors for emotional and practical guidance.",
+                    "Accessible breast health support Webapp, whenever you need it. Gentle guidance designed for your emotional and physical well-being.",
                 },
                 {
                   year: "2026",
