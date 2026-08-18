@@ -24,7 +24,7 @@ const CTA = () => {
 
               <div className="mt-8 flex justify-center sm:justify-start">
                 <Link
-                  href="/about"
+                  href="/form"
                   className="w-fit flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-white transition-all hover:scale-101 hover:bg-primary duration-300 shadow-lg shadow-black/10"
                 >
                   <span>Get Involved</span>

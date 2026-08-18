@@ -87,6 +87,7 @@ const PartnersPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                 >
+                  <a href='/form' target="_blank" rel="noopener noreferrer">
                   <button className="px-8 py-4 bg-primary text-white rounded-full font-bold transition-all flex items-center gap-2 group shadow-lg shadow-primary/20">
                     Become a Partner
                     <ArrowRight
@@ -94,6 +95,7 @@ const PartnersPage = () => {
                       className="group-hover:translate-x-1 transition-transform"
                     />
                   </button>
+                  </a>
                 </motion.div>
               </div>
 
@@ -215,6 +217,7 @@ const PartnersPage = () => {
                 Join us in spreading awareness, encouraging early detection, and
                 empowering women across communities.
               </p>
+              <a href='/form' target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-4 bg-white text-primary rounded-full font-bold hover:bg-slate-50 transition-colors flex items-center gap-2 group">
                 Become a Partner
                 <ArrowRight
@@ -222,6 +225,7 @@ const PartnersPage = () => {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </button>
+              </a>
             </div>
             <div className="absolute inset-y-0 right-0 w-1/2 hidden lg:block">
               <img

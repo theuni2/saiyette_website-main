@@ -49,7 +49,7 @@ const Hero = () => {
           className="flex flex-col items-center gap-6 sm:flex-row"
         >
           <Link
-            href="/donate"
+            href="/form"
             className="flex items-center gap-1 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-4 text-lg font-medium transition-all hover:scale-101"
           >
             <p>Get Involved</p>
