@@ -198,7 +198,7 @@ const Navbar = () => {
                         className="w-full h-14 rounded-2xl bg-primary hover:bg-primary/90 text-lg font-bold shadow-lg"
                       >
                         <Link
-                          href="/get-involved"
+                          href="/form"
                           onClick={() => setIsOpen(false)}
                         >
                           Get Involved
