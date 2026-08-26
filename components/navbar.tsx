@@ -111,7 +111,7 @@ const Navbar = () => {
           <div className="hidden sm:flex">
             {!isScrolled ? (
               <Link
-                href="/our-story"
+                href="/form"
                 className="flex items-center gap-1 rounded-full bg-none px-6 py-3 text-sm font-medium text-black transition-all hover:scale-101 hover:bg-primary hover:text-white hover:border-primary border border-black"
               >
                 <p>Get Involved</p>

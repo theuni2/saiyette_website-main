@@ -57,6 +57,7 @@ const preventionTips = [
 
 import YouTubeEmbed from "@/components/video-embed";
 import Recognition from "@/components/recognition";
+import CareCheckSection from "@/components/care-check-section";
 
 const AwarenessPage = () => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -485,6 +486,9 @@ const AwarenessPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Dedicated Care Check App & Medical Testimonials Section */}
+        <CareCheckSection />
 
         <section className="py-24 bg-secondary/20 relative overflow-hidden">
           <div className="container mx-auto px-4">

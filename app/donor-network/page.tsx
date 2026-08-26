@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import CareCheckSection from "@/components/care-check-section";
 
 const testimonials = [
   {
@@ -224,7 +225,7 @@ const HeroSection = () => (
             className="flex flex-wrap gap-4"
           >
             <Link
-              href="/about"
+              href="/form"
               className="px-8 py-4 bg-primary text-white rounded-full font-bold transition-all flex items-center gap-2 group shadow-lg shadow-primary/20 hover:scale-101"
             >
               Support Our Mission
@@ -327,7 +328,7 @@ const TestimonialsSection = () => {
           />
         </div>
 
-        <div className="mt-24 pt-16 border-t border-primary/5">
+        {/* <div className="mt-24 pt-16 border-t border-primary/5">
           <motion.h3
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -341,7 +342,7 @@ const TestimonialsSection = () => {
               <TestimonialCard key={idx} item={item} index={idx} />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
@@ -354,6 +355,7 @@ const DonorNetwork = () => {
       <main>
         <HeroSection />
         <TestimonialsSection />
+        <CareCheckSection />
         {/* <AwarenessPosters /> */}
         <CTA />
       </main>
