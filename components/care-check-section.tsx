@@ -432,7 +432,7 @@ export const CareCheckSection = () => {
                   </button>
 
                   {/* View / Download PDF */}
-                  <a
+                  {/* <a
                     href={item.pdfSrc}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -441,7 +441,7 @@ export const CareCheckSection = () => {
                     <FileText size={16} />
                     <span>Official PDF Letter</span>
                     <Download size={14} className="ml-0.5" />
-                  </a>
+                  </a> */}
                 </div>
               </motion.div>
             ))}
@@ -469,26 +469,26 @@ export const CareCheckSection = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 {
-                  title: "Apollo Cradle Review",
-                  doctor: "Dr. Shilpi Sachdev",
+                  title: "Artemis Hospitals Endorsement",
+                  doctor: "Dr. Naoline Sinha",
                   pdf: "/care/1.pdf",
                   image: "/care/5.jpg",
                 },
                 {
-                  title: "Artemis Hospitals Endorsement",
-                  doctor: "Dr. Renu Raina Sehgal",
+                  title: "Fortis Hospitals Endorsement",
+                  doctor: "Dr. Smita Vats",
                   pdf: "/care/2.pdf",
                   image: "/care/6.jpg",
                 },
                 {
-                  title: "NHS Trust UK Endorsement",
-                  doctor: "Dr. Adhip Mandal",
+                  title: "Swaraj Vikas Foundation",
+                  doctor: "Mr. Narendra Singh",
                   pdf: "/care/3.pdf",
                   image: "/care/7.jpg",
                 },
                 {
-                  title: "Penn Medicine Evaluation",
-                  doctor: "Dr. Shweta Soni, MD",
+                  title: "UCONN Health",
+                  doctor: "Dr. Sukhda Monga",
                   pdf: "/care/4.pdf",
                   image: "/care/9.jpg",
                 },
@@ -518,7 +518,7 @@ export const CareCheckSection = () => {
                       <Download size={14} />
                       <span>Download PDF</span>
                     </a>
-                    <button
+                    {/* <button
                       onClick={() =>
                         setSelectedPreview({
                           type: "image",
@@ -530,7 +530,7 @@ export const CareCheckSection = () => {
                       title="Quick Preview Letter Image"
                     >
                       <Maximize2 size={15} />
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               ))}
