@@ -608,7 +608,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, ExternalLink, Newspaper } from "lucide-react";
 import YouTubeEmbed from "./video-embed";
 import InstagramEmbed from "./instagram-embed";
 
@@ -650,6 +650,75 @@ export default function Recognition() {
               </span>
               <div className="h-px flex-1 bg-primary/10" />
             </div>
+
+            {/* Gulf News Press Feature */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-8 bg-gradient-to-br from-primary/10 via-white to-pink-50 rounded-[2.5rem] p-6 md:p-10 border border-primary/20 shadow-lg relative overflow-hidden"
+            >
+              <div className="flex flex-col lg:flex-row items-center gap-8">
+                {/* Text info */}
+                <div className="flex-1 space-y-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider">
+                    <Newspaper size={14} />
+                    <span>GULF NEWS / FRIDAY MAGAZINE FEATURE</span>
+                  </div>
+
+                  <h3 className="text-2xl md:text-4xl font-extrabold tracking-tight text-foreground leading-tight">
+                    Purpose in Pink: 17-Year-Old Builds AI Platform to Support Breast Cancer Patients
+                  </h3>
+
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                    Featured in Gulf News Friday Magazine as leading young changemakers in the UAE making an impact beyond classrooms.
+                  </p>
+
+                  <div className="pt-2">
+                    <a
+                      href="https://gulfnews.com/friday/purpose-in-pink-17-year-old-builds-ai-platform-to-support-breast-cancer-patients-1.500654196"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold px-6 py-3 rounded-full text-sm shadow-md transition-all hover:scale-102"
+                    >
+                      <span>Read Full Article on Gulf News</span>
+                      <ExternalLink size={16} />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Images */}
+                <div className="grid grid-cols-2 gap-4 shrink-0 w-full lg:w-auto">
+                  <div
+                    className="cursor-zoom-in group relative rounded-2xl overflow-hidden border-2 border-white shadow-md aspect-[3/4] w-36 sm:w-48 bg-white"
+                    onClick={() => setSelectedImage("/new/gulfnews-cover.jpg")}
+                  >
+                    <img
+                      src="/new/gulfnews-cover.jpg"
+                      alt="Gulf News Friday Magazine Cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold p-2 text-center">
+                      Click to View Cover
+                    </div>
+                  </div>
+
+                  <div
+                    className="cursor-zoom-in group relative rounded-2xl overflow-hidden border-2 border-white shadow-md aspect-[3/4] w-36 sm:w-48 bg-white"
+                    onClick={() => setSelectedImage("/new/gulfnews-article.jpg")}
+                  >
+                    <img
+                      src="/new/gulfnews-article.jpg"
+                      alt="Gulf News Friday Magazine Article Page"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold p-2 text-center">
+                      Click to View Article
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
             
             <div className="space-y-6">
               {/* Row 1: Three A4 portrait style images */}

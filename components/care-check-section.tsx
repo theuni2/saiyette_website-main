@@ -76,11 +76,23 @@ const testimonials: Testimonial[] = [
     institution: "Lancaster General Hospital / Penn Medicine",
     quote:
       "An indispensable tool for preventive health. Early detection begins with self-awareness, and this app makes taking charge of personal health simple, accessible, and intuitive. It's inspiring to see technology used to demystify breast self-exams.",
-    imageSrc: "/care/9.jpg",
+    imageSrc: "/care/8.jpg",
     pdfSrc: "/care/4.pdf",
     tag: "Penn Medicine",
     logoText: "PENN MEDICINE",
   },
+  // {
+  //   id: "mandeep-malhotra",
+  //   doctorName: "Dr. Mandeep Singh Malhotra",
+  //   doctorRole: "Surgical Oncologist, Robotic Breast & TORS Surgeon",
+  //   institution: "Art of Healing Cancer / CDAS Super Speciality Hospital",
+  //   quote:
+  //     "Breast cancer in India presents a full decade earlier than in the West. Anything that makes self-examination a regular habit, and shortens that delay, is worth supporting. Which is why the app developed by this young woman to guide and encourage self-examination is such a commendable effort.",
+  //   imageSrc: "/care/10.jpg",
+  //   pdfSrc: "/care/5.pdf",
+  //   tag: "Art of Healing Cancer",
+  //   logoText: "ART OF HEALING",
+  // },
 ];
 
 export const CareCheckSection = () => {
@@ -461,34 +473,40 @@ export const CareCheckSection = () => {
               <div className="flex items-center gap-2">
                 <FileText className="text-primary" size={24} />
                 <span className="text-xs font-bold text-primary uppercase tracking-wider">
-                  4 PDF Documents Available
+                  5 PDF Documents Available
                 </span>
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {[
                 {
-                  title: "Artemis Hospitals Endorsement",
-                  doctor: "Dr. Naoline Sinha",
-                  pdf: "/care/1.pdf",
-                  image: "/care/5.jpg",
+                  title: "Art of Healing Cancer",
+                  doctor: "Dr. Mandeep Singh Malhotra",
+                  pdf: "/care/5.pdf",
+                  image: "/care/10.jpg",
                 },
                 {
-                  title: "Fortis Hospitals Endorsement",
-                  doctor: "Dr. Smita Vats",
+                  title: "Artemis Hospitals",
+                  doctor: "Dr. Renu Raina Sehgal",
                   pdf: "/care/2.pdf",
                   image: "/care/6.jpg",
                 },
                 {
-                  title: "Swaraj Vikas Foundation",
-                  doctor: "Mr. Narendra Singh",
+                  title: "NHS Trust UK",
+                  doctor: "Dr. Adhip Mandal",
                   pdf: "/care/3.pdf",
                   image: "/care/7.jpg",
                 },
                 {
-                  title: "UCONN Health",
-                  doctor: "Dr. Sukhda Monga",
+                  title: "Apollo Cradle",
+                  doctor: "Dr. Shilpi Sachdev",
+                  pdf: "/care/1.pdf",
+                  image: "/care/5.jpg",
+                },
+                {
+                  title: "Penn Medicine",
+                  doctor: "Dr. Shweta Soni, MD",
                   pdf: "/care/4.pdf",
                   image: "/care/9.jpg",
                 },
