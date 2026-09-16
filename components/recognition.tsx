@@ -608,7 +608,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ExternalLink, Newspaper } from "lucide-react";
+import { X, ExternalLink, Newspaper, Radio, Globe, BookOpen } from "lucide-react";
 import YouTubeEmbed from "./video-embed";
 import InstagramEmbed from "./instagram-embed";
 
@@ -625,20 +625,148 @@ export default function Recognition() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-bold mb-6 tracking-tight"
           >
-           <span className="text-primary">Impact & Recognition</span>
+           <span className="text-primary">Impact & Media Recognition</span>
           </motion.h2>
-          {/* <motion.p
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed"
           >
-            Celebrating young voices that spark awareness and courage.
-            Saiyette’s powerful article and dedicated advocacy have been
-            featured in IntellyJelly Magazine.
-          </motion.p> */}
+            Featured in leading international news outlets including Times of India, Gulf News, Khaleej Times, Nature & Science, and Saudi Press for youth innovation in breast cancer awareness.
+          </motion.p>
         </div>
+
+        {/* Global Press & Media Highlights */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary/70 flex items-center gap-2">
+              <Globe size={16} />
+              INTERNATIONAL MEDIA & PRESS COVERAGE
+            </span>
+            <div className="h-px flex-1 bg-primary/20" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Times of India Feature */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-3xl p-6 border border-primary/10 shadow-md flex flex-col justify-between hover:border-primary/30 transition-all hover:shadow-xl group"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3.5 py-1 rounded-full bg-red-100 text-red-700 font-bold text-xs uppercase tracking-wider">
+                    Times of India
+                  </span>
+                  <Newspaper className="text-red-500" size={20} />
+                </div>
+                <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                  At 10, she lost her grandmother to cancer. At 17, Dubai teen Saiyette Aima built an AI platform and took cancer awareness to India
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Featured in Times of India spotlighting Saiyette Aima&apos;s journey, AI platform innovation, and global health advocacy.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100 flex flex-col gap-2">
+                <a
+                  href="https://timesofindia.indiatimes.com/world/middle-east/at-10-she-lost-her-grandmother-to-cancer-at-17-dubai-teen-saiyette-aima-built-an-ai-platform-and-took-cancer-awareness-to-india/articleshow/133914170.cms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
+                >
+                  <span>Read Full Article on TOI</span>
+                  <ExternalLink size={14} />
+                </a>
+
+                <a
+                  href="https://timesofindia.indiatimes.com/top-news-now/top-news-audio-briefing-08-sep-2026-3-pm/amp_videoshow/133918517.cms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-gray-50 text-gray-700 hover:text-primary text-xs font-semibold transition-all border border-gray-200"
+                >
+                  <Radio size={14} />
+                  <span>Listen to TOI Audio Briefing</span>
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Nature et Science Feature */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white rounded-3xl p-6 border border-primary/10 shadow-md flex flex-col justify-between hover:border-primary/30 transition-all hover:shadow-xl group"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+                    Nature & Science
+                  </span>
+                  <BookOpen className="text-emerald-500" size={20} />
+                </div>
+                <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                  International Health Feature: Dubai Teen Saiyette Aima
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Nature et Science coverage on how Saiyette Aima leverages technology to break social taboos and make breast health accessible.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <a
+                  href="https://www.natureetscience.com/health/general/at-10-she-lost-her-grandmother-to-breast-cancer-at-17-dubai-teen-saiyette-aima-built-an-ai-platform-and-took-cancer-awareness-to-india/ar-AA2bPdwf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
+                >
+                  <span>Read Nature & Science Story</span>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Khaleej Times Feature */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white rounded-3xl p-6 border border-primary/10 shadow-md flex flex-col justify-between hover:border-primary/30 transition-all hover:shadow-xl group"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wider">
+                    Khaleej Times
+                  </span>
+                  <Globe className="text-amber-600" size={20} />
+                </div>
+                <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                  Dubai Teen Turns Personal Loss Into Movement: Hair Donation, Early Detection & AI Cancer Platform
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Featured in Khaleej Times detailing Saiyette Aima&apos;s story of losing her grandmother, leading hair donation drives, and launching the AI Care Check platform.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <a
+                  href="https://www.khaleejtimes.com/lifestyle/dubai-teen-grandmother-cancer-hair-donation-early-detection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
+                >
+                  <span>Read Khaleej Times Article</span>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
 
         <div className="space-y-16">
 

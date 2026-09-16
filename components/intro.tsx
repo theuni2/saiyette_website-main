@@ -140,6 +140,9 @@ const Intro = () => {
             className="flex flex-col gap-8"
           >
             <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider">
+                <span>FOUNDER: SAIYETTE AIMA</span>
+              </div>
               <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -149,9 +152,8 @@ const Intro = () => {
                 Together, We Fight Cancer{" "}
                 <span className="text-primary">One Step at a Time.</span>
                 <br />
-                <span className="text-3xl md:text-4xl font-normal text-muted-foreground mt-4 block leading-tight">
-                  Empowering women through awareness, support, and early
-                  detection.
+                <span className="text-2xl md:text-3xl font-normal text-muted-foreground mt-4 block leading-tight">
+                  Founded by Dubai teenager Saiyette Aima to empower women through AI self-examination guidance & early detection.
                 </span>
               </motion.h2>
 
@@ -161,9 +163,7 @@ const Intro = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg text-muted-foreground leading-relaxed max-w-xl"
               >
-                Our mission is to raise awareness about breast cancer, promote
-                early screening, and support patients and survivors through
-                education, empathy, and action.
+                After losing her grandmother to breast cancer at age 10, Saiyette Aima launched Pink For Purpose and created Care Check to break taboos, promote early screening, and support patients across the UAE, India, Saudi Arabia, and globally.
               </motion.p>
             </div>
 

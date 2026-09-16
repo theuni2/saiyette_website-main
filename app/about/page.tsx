@@ -53,24 +53,17 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="w-full lg:w-1/2 text-left text-foreground"
             >
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                Hello, I&apos;m <span className="text-primary">Saiyette.</span>
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                Hello, I&apos;m <span className="text-primary">Saiyette Aima.</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-primary/80">
-                Welcome to Pink For Purpose
+              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-primary/90">
+                Founder & Creator of Pink For Purpose & Care Check
               </h2>
               <p className="text-lg md:text-xl leading-relaxed mb-6 text-muted-foreground">
-                Unlocking dreams through compassion. At Pink For Purpose, we
-                believe small acts of kindness create powerful change. Join us
-                as we support meaningful causes and spread hope one step at a
-                time.
+                At 10 years old, I lost my grandmother to breast cancer. Witnessing the physical and emotional toll it took on her and our family changed my life forever. Her memory inspired me to build a movement where no woman faces breast health struggles alone.
               </p>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                My passion for this work grew from a personal loss. My
-                grandmother bravely fought breast cancer, and witnessing the
-                physical and emotional toll it took on her and our family
-                changed the way I saw the world. Her resilience continues to
-                inspire me to stand with others facing the same battle.
+                At 17, as a Dubai high school student, I founded <strong className="text-foreground">Pink For Purpose</strong> and built <strong className="text-foreground">Care Check</strong> — an AI-driven breast health platform designed to guide women through self-examinations, overcome cultural taboos, and shorten the delay between noticing symptoms and taking life-saving clinical action across the UAE, India, Saudi Arabia, and globally.
               </p>
             </motion.div>
           </div>
