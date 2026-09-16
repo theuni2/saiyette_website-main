@@ -648,7 +648,7 @@ export default function Recognition() {
             <div className="h-px flex-1 bg-primary/20" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Times of India Feature */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -678,7 +678,7 @@ export default function Recognition() {
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
                 >
-                  <span>Read Full Article on TOI</span>
+                  <span>Read Article</span>
                   <ExternalLink size={14} />
                 </a>
 
@@ -689,12 +689,12 @@ export default function Recognition() {
                   className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-gray-50 text-gray-700 hover:text-primary text-xs font-semibold transition-all border border-gray-200"
                 >
                   <Radio size={14} />
-                  <span>Listen to TOI Audio Briefing</span>
+                  <span>TOI Audio Briefing</span>
                 </a>
               </div>
             </motion.div>
 
-            {/* Nature et Science Feature */}
+            {/* Saudi Daily News Feature */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -704,27 +704,27 @@ export default function Recognition() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs uppercase tracking-wider">
-                    Nature & Science
+                  <span className="px-3.5 py-1 rounded-full bg-green-100 text-green-800 font-bold text-xs uppercase tracking-wider">
+                    Saudi Daily News
                   </span>
-                  <BookOpen className="text-emerald-500" size={20} />
+                  <Globe className="text-green-600" size={20} />
                 </div>
                 <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
-                  International Health Feature: Dubai Teen Saiyette Aima
+                  She lost her grandma to cancer at 10, donated her hair: Now this Dubai teen is helping other women
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Nature et Science coverage on how Saiyette Aima leverages technology to break social taboos and make breast health accessible.
+                  Featured in Saudi Daily News spotlighting Saiyette Aima&apos;s regional impact and AI breast health initiative.
                 </p>
               </div>
 
               <div className="mt-6 pt-4 border-t border-gray-100">
                 <a
-                  href="https://www.natureetscience.com/health/general/at-10-she-lost-her-grandmother-to-breast-cancer-at-17-dubai-teen-saiyette-aima-built-an-ai-platform-and-took-cancer-awareness-to-india/ar-AA2bPdwf"
+                  href="https://saudidaily.news/she-lost-her-grandma-to-cancer-at-10-donated-her-hair-now-this-dubai-teen-is-helping-other-women/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
                 >
-                  <span>Read Nature & Science Story</span>
+                  <span>Read Saudi Daily News</span>
                   <ExternalLink size={14} />
                 </a>
               </div>
@@ -749,7 +749,7 @@ export default function Recognition() {
                   Dubai Teen Turns Personal Loss Into Movement: Hair Donation, Early Detection & AI Cancer Platform
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Featured in Khaleej Times detailing Saiyette Aima&apos;s story of losing her grandmother, leading hair donation drives, and launching the AI Care Check platform.
+                  Featured in Khaleej Times detailing Saiyette Aima&apos;s story of losing her grandmother and launching AI Care Check.
                 </p>
               </div>
 
@@ -760,7 +760,43 @@ export default function Recognition() {
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
                 >
-                  <span>Read Khaleej Times Article</span>
+                  <span>Read Khaleej Times</span>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Nature et Science Feature */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-white rounded-3xl p-6 border border-primary/10 shadow-md flex flex-col justify-between hover:border-primary/30 transition-all hover:shadow-xl group"
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+                    Nature & Science
+                  </span>
+                  <BookOpen className="text-emerald-500" size={20} />
+                </div>
+                <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                  International Health Feature: Dubai Teen Saiyette Aima
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Nature et Science coverage on how Saiyette Aima leverages technology to break social taboos.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <a
+                  href="https://www.natureetscience.com/health/general/at-10-she-lost-her-grandmother-to-breast-cancer-at-17-dubai-teen-saiyette-aima-built-an-ai-platform-and-took-cancer-awareness-to-india/ar-AA2bPdwf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-white text-xs font-bold hover:bg-primary/90 transition-all shadow-sm"
+                >
+                  <span>Read Nature & Science</span>
                   <ExternalLink size={14} />
                 </a>
               </div>

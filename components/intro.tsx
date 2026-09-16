@@ -153,7 +153,9 @@ const Intro = () => {
                 <span className="text-primary">One Step at a Time.</span>
                 <br />
                 <span className="text-2xl md:text-3xl font-normal text-muted-foreground mt-4 block leading-tight">
-                  Founded by Dubai teenager Saiyette Aima to empower women through AI self-examination guidance & early detection.
+                  {/* Founded by Dubai teenager Saiyette Aima to empower women through AI self-examination guidance & early detection. */}
+                  Pink for Purpose is a youth-led cancer awareness initiative founded by Dubai student Saiyette Aima, focused on education, early detection, community outreach and access to screening.
+
                 </span>
               </motion.h2>
 
@@ -163,7 +165,8 @@ const Intro = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg text-muted-foreground leading-relaxed max-w-xl"
               >
-                After losing her grandmother to breast cancer at age 10, Saiyette Aima launched Pink For Purpose and created Care Check to break taboos, promote early screening, and support patients across the UAE, India, Saudi Arabia, and globally.
+                {/* After losing her grandmother to breast cancer at age 10, Saiyette Aima launched Pink For Purpose and created Care Check to break taboos, promote early screening, and support patients across the UAE, India, Saudi Arabia, and globally. */}
+                Inspired by the loss of her grandmother to cancer, Saiyette began Pink for Purpose with a belief that awareness matters most when it leads to action. From conversations with doctors and cancer-awareness campaigns to fundraising, community screening camps and CareCheck, Pink for Purpose works to make early detection more understood, accessible and actionable.
               </motion.p>
             </div>
 
