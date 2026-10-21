@@ -1034,40 +1034,23 @@ export default function Recognition() {
             </div>
           </section>
 
- {/* UK Section */}
+          {/* UK Section */}
           <section>
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-6">
               <span className="text-xs font-bold uppercase tracking-widest text-primary/50">
                 United Kingdom
               </span>
               <div className="h-px flex-1 bg-primary/10" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="max-w-4xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="cursor-zoom-in"
-                onClick={() => setSelectedImage("/new/5.jpeg")}
-              >
-                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white">
-                  <img
-                    src="/new/5.jpeg"
-                    alt="COBIS Certificate"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
                 className="cursor-zoom-in"
                 onClick={() => setSelectedImage("/new/6.png")}
               >
-                <div className="relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white bg-slate-50 p-4 flex items-center justify-center">
+                <div className="relative aspect-[16/10] md:aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white bg-slate-50 p-4 md:p-6 flex items-center justify-center">
                   <img
                     src="/new/6.png"
                     alt="COBIS Recognition"
