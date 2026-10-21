@@ -608,7 +608,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ExternalLink, Newspaper, Radio, Globe, BookOpen } from "lucide-react";
+import { X, ExternalLink, Newspaper, Radio, Globe, BookOpen, Trophy, Award } from "lucide-react";
 import YouTubeEmbed from "./video-embed";
 import InstagramEmbed from "./instagram-embed";
 
@@ -634,9 +634,79 @@ export default function Recognition() {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed"
           >
-            Featured in leading international news outlets including Times of India, Gulf News, Khaleej Times, Nature & Science, and Saudi Press for youth innovation in breast cancer awareness.
+            Nominated &amp; selected for the prestigious <strong>Khaleej Times KT+150 List</strong> (Social Impact Category) celebrating the UAE&apos;s next generation of disruptive game changers, alongside international press coverage across Times of India, Gulf News, Khaleej Times, Nature &amp; Science, and Saudi Press.
           </motion.p>
         </div>
+
+        {/* Khaleej Times KT+150 Honoree Spotlight Showcase */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16 bg-gradient-to-br from-amber-500/10 via-white to-primary/10 rounded-[2.5rem] p-6 md:p-10 border border-amber-500/30 shadow-xl relative overflow-hidden"
+        >
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex-1 space-y-4">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 font-bold text-xs uppercase tracking-wider border border-amber-300">
+                  <Trophy size={14} className="text-amber-600" />
+                  KHALEEJ TIMES · KT+150 LIST
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider">
+                  <Award size={14} />
+                  SOCIAL IMPACT CATEGORY
+                </span>
+              </div>
+
+              <h3 className="text-2xl md:text-4xl font-extrabold tracking-tight text-foreground leading-tight">
+                Selected for the KT+150 List: Celebrating the UAE&apos;s Next Generation of Disruptive Game Changers
+              </h3>
+
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                Saiyette Aima has been nominated and selected for the prestigious <strong>Khaleej Times KT+150 List</strong> in the <strong>Social Impact Category</strong>. The KT+150 spotlights 150 emerging leaders, innovators, and trailblazers shaping the future of the UAE, recognizing Saiyette&apos;s pioneering work in youth cancer awareness, community screening access, and AI breast health innovation with Care Check.
+              </p>
+
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <a
+                  href="https://thebrandberries.com/khaleej-times-launches-the-kt-plus-150-list-celebrating-the-uaes-next-generation-of-disruptive-game-changers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-all hover:scale-102"
+                >
+                  <span>Read Announcement on The Brand Berries</span>
+                  <ExternalLink size={15} />
+                </a>
+
+                <a
+                  href="https://www.khaleejtimes.com/kt-150"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-foreground font-semibold px-5 py-3 rounded-full text-xs sm:text-sm border border-gray-200 shadow-sm transition-all hover:border-primary/40"
+                >
+                  <Globe size={15} className="text-primary" />
+                  <span>Khaleej Times KT 150 Portal</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Visual preview */}
+            <div className="shrink-0 w-full lg:w-[440px]">
+              <div
+                className="cursor-zoom-in group relative rounded-2xl overflow-hidden border-2 border-white shadow-lg bg-white aspect-[16/10] flex items-center justify-center p-3"
+                onClick={() => setSelectedImage("/new/kt-plus.png")}
+              >
+                <img
+                  src="/new/kt-plus.png"
+                  alt="Khaleej Times KT Plus 150 List - Social Impact Category"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold p-2 text-center">
+                  Click to View KT+150 Categories &amp; Details
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Global Press & Media Highlights */}
         <section className="mb-16">
@@ -730,7 +800,7 @@ export default function Recognition() {
               </div>
             </motion.div>
 
-            {/* Khaleej Times Feature */}
+            {/* Khaleej Times Feature & KT+150 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -745,15 +815,19 @@ export default function Recognition() {
                   </span>
                   <Globe className="text-amber-600" size={20} />
                 </div>
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-800 text-[11px] font-bold border border-amber-300/40">
+                  <Trophy size={12} className="text-amber-600" />
+                  <span>KT+150 Nominee · Social Impact</span>
+                </div>
                 <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
-                  Dubai Teen Turns Personal Loss Into Movement: Hair Donation, Early Detection & AI Cancer Platform
+                  Dubai Teen Turns Personal Loss Into Movement: Hair Donation, Early Detection &amp; AI Cancer Platform
                 </h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Featured in Khaleej Times detailing Saiyette Aima&apos;s story of losing her grandmother and launching AI Care Check.
+                  Featured in Khaleej Times detailing Saiyette Aima&apos;s story and nominated for the prestigious KT+150 List in the Social Impact Category.
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-gray-100">
+              <div className="mt-6 pt-4 border-t border-gray-100 flex flex-col gap-2">
                 <a
                   href="https://www.khaleejtimes.com/lifestyle/dubai-teen-grandmother-cancer-hair-donation-early-detection"
                   target="_blank"
@@ -762,6 +836,15 @@ export default function Recognition() {
                 >
                   <span>Read Khaleej Times</span>
                   <ExternalLink size={14} />
+                </a>
+                <a
+                  href="https://thebrandberries.com/khaleej-times-launches-the-kt-plus-150-list-celebrating-the-uaes-next-generation-of-disruptive-game-changers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-amber-50 text-amber-900 hover:text-primary text-xs font-semibold transition-all border border-amber-200"
+                >
+                  <Trophy size={13} className="text-amber-600" />
+                  <span>KT+150 Announcement</span>
                 </a>
               </div>
             </motion.div>

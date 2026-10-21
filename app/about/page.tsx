@@ -57,7 +57,7 @@ const About = () => {
                 Hello, I&apos;m <span className="text-primary">Saiyette Aima.</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-primary/90">
-                Founder & Creator of Pink For Purpose & Care Check
+                Founder &amp; Creator of Pink For Purpose &amp; Care Check · KT+150 Honoree (Social Impact)
               </h2>
               <p className="text-lg md:text-xl leading-relaxed mb-6 text-muted-foreground">
                 At 10 years old, I lost my grandmother to breast cancer. Witnessing the physical and emotional toll it took on her and our family changed my life forever. Her memory inspired me to build a movement where no woman faces breast health struggles alone.
@@ -187,9 +187,9 @@ const About = () => {
                 // },
                 {
                   year: "2025",
-                  title: "Care Check",
+                  title: "Care Check & KT+150 Selection",
                   description:
-                    "Accessible breast health support Webapp, whenever you need it. Gentle guidance designed for your emotional and physical well-being.",
+                    "Accessible breast health support Webapp, whenever you need it. Selected for the prestigious Khaleej Times KT+150 List in the Social Impact Category, celebrating the UAE's next-generation changemakers.",
                 },
                 {
                   year: "2026",

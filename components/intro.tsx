@@ -9,6 +9,7 @@ import {
   PlayIcon,
   PauseIcon,
 } from "@phosphor-icons/react";
+import { Trophy } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 
@@ -140,8 +141,14 @@ const Intro = () => {
             className="flex flex-col gap-8"
           >
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider">
-                <span>FOUNDER: SAIYETTE AIMA</span>
+              <div className="flex flex-wrap items-center gap-2.5">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider">
+                  <span>FOUNDER: SAIYETTE AIMA</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-500/10 text-amber-900 border border-amber-500/20 font-bold text-xs uppercase tracking-wider shadow-xs">
+                  <Trophy size={13} className="text-amber-600" />
+                  <span>KT+150 HONOREE · SOCIAL IMPACT</span>
+                </div>
               </div>
               <motion.h2
                 initial={{ opacity: 0 }}
