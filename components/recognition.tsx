@@ -1125,11 +1125,28 @@ export default function Recognition() {
               </span>
               <div className="h-px flex-1 bg-primary/10" />
             </div>
-            <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                className="cursor-zoom-in"
+                onClick={() => setSelectedImage("/new/cobis-certificate.png")}
+              >
+                <div className="relative aspect-[16/10] md:aspect-[16/9] rounded-[2rem] overflow-hidden shadow-sm group border-4 border-white bg-slate-50 p-4 md:p-6 flex items-center justify-center">
+                  <img
+                    src="/new/cobis-certificate.png"
+                    alt="COBIS Student Achievement Award Certificate - Saiyette Aima"
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
                 className="cursor-zoom-in"
                 onClick={() => setSelectedImage("/new/6.png")}
               >
